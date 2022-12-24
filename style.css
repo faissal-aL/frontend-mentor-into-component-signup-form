@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* font weights 400 500 600 700      */
+:root{
+    --font1 : Poppins;
+    --Red: hsl(0, 100%, 74%) ;
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%); 
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+body{
+    background-color: hsl(0, 100%, 74%) ;;
+    background-image: url(images/bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--font1);
+    color: white;
+}
+main{
+    display: flex;
+}
+.text_side{
+    padding: 10% 5% 10% 10%;
+    width: 50%;
+}
+.form_side{
+    padding: 5% 10% 10% 10%;
+    width: 50%;
+}
+h1{
+    font-size: 2.5rem;
+    line-height: 2.6rem;
+}
+p{
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.779);
+}
+h2{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    font-size: 0.7rem;
+    height: 4em;
+    background-color: var(--Blue);
+    box-shadow: 0px 5px  rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
+}
+#trial{
+    font-weight: 400;
+}
+form{
+    position: relative;
+    background-color: white;
+    border-radius: 7px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    box-shadow: 0px 5px  rgba(0, 0, 0, 0.19);
+}
+input{
+    box-sizing: border-box;
+    border: 1px solid var(--Grayish-Blue);
+    width: 85%;
+    margin: 10px 10px 5px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+input:focus{
+    outline: none;
+    border: 1px solid var(--Dark-Blue);
+}
+
+.error_icon{ 
+    display: none;
+    position: absolute;
+    right: 43px;
+    top: 41px;
+    width: 16px;   
+}
+#error2{
+    top: 28%;
+}
+#error3{
+    top: 45.4%;
+}
+#error4{
+    top: 62.5%;
+}
+h4{
+    right: 32px;
+    position: absolute;
+    display: none;
+    color: var(--Red);
+    text-align: right;
+    width: 85%;
+    font-size: 0.5rem;
+    font-weight: 600;
+    font-style: italic;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#error1_text{
+    top: 69px;
+}
+#error2_text{
+    top: 124px;
+}
+#error3_text{
+    top: 180px;
+}
+#error4_text{
+    top: 234px;
+}
+::placeholder,input[type='text'] {
+    font-family: var(--font1);
+    font-weight: 600;
+    font-size: 0.65rem;
+}
+#claim_button{
+    border: none;
+    padding: 0px;
+    margin-bottom: 0px;
+    background-color: var(--Green);
+    color: white;
+    font-family: var(--font1);
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.7px;
+}
+#claim_button:hover,#terms:hover{
+    cursor: pointer;
+}
+#claim_button:hover{
+    background-color: hsla(154, 59%, 51%, 0.742);
+}
+h3{
+    color: var(--Grayish-Blue);
+    font-size: 0.5rem;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+#terms{
+    color: var(--Red);
+}
+
+@media screen and (width<901px) {
+    h2{
+        width: 100%;
+    }
+    .form_side{
+        padding: 5% 2% 10% 2%;
+    }
+    form{
+        width: 100%;
+    }
+    .text_side{
+        padding: 10% 0% 10% 5%;
+    }
+}
+
+@media screen and (width<400px) {
+    body{
+        margin: 0px;
+    }
+    main{
+        flex-direction: column;
+    }
+    .text_side{
+        padding: 15% 5% 5% 5%;
+        width: 100%;
+    }
+    .form_side{
+        padding: 0% 5% 10% 5%;
+        width: 100%;
+    }
+    h1{
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+    }
+    p{
+        text-align: center;
+        font-size: 0.9rem;
+    }
+    h2{
+        width: 100%;
+        font-size: 0.7rem;
+        height: 4em;
+        margin-bottom: 20px;
+    }
+    form{
+        border-radius: 7px;
+        width: 100%;
+        padding-top: 20px;
+    }
+    input{
+        width: 85%;
+        margin: 0px 10px 12px 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h3{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+    .error_icon{ 
+        position: absolute;
+        right: 35px;
+        top: 32px;
+        width: 16px;   
+    }
+    #error2{
+        top: 84px;
+    }
+    #error3{
+        top: 136px;
+    }
+    #error4{
+        top: 188px;
+    }
+    h4{
+        right: 27px;
+    }
+    #error1_text{
+        top: 58px;
+    }
+    #error2_text{
+        top: 110px;
+    }
+    #error3_text{
+        top: 162px;
+    }
+    #error4_text{
+        top: 214px;
+    }
+}
